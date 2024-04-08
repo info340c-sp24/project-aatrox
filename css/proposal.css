@@ -1,1 +1,11 @@
+body{
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: left;
+}
 
+header {
+    color: hsla(237deg 74% 33% / 61%);
+    padding: 15px;
+    text-align: center;
+}
