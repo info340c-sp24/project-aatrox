@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-body {
-=======
 body{
->>>>>>> 3208eca7e83ee912f8a946663b21f15388c51562
     font-size: 16px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-align: left;
@@ -15,10 +11,8 @@ header {
 }
 
 h1 {
+    color:slateblue;
     font-weight: bold;
     font-kerning: auto;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3208eca7e83ee912f8a946663b21f15388c51562
+
