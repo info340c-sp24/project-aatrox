@@ -4,4 +4,3 @@ This repository contains code for an interactive information web app, created fo
 
 Name: Aijing Yang, Xiaobo Li
 
-test
