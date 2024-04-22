@@ -2,52 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Xiaobo Li, Aijing Yang">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>LoL Strategy Guide</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>League of Legends Strategy Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="guide.html"><i class="fas fa-book"></i> Guide</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section class="role" id="top">
             <h2>TOP</h2>
+            <button onclick="showDescription('top')">Description</button>
             <button onclick="showDetails('top')">Details</button>
-            <p class="details" hidden>Top lane strategies and champion insights.</p>
+            <p class="description">Top lane strategies and champion insights.</p>
+            <table class="details" hidden>
+                <form action="#" method="GET">
+                    <label for="keyword">Character:</label>
+                    <input type="text" id="character" name="character" placeholder="Enter a charcater">
+            
+                    <label for="category">Skill:</label>
+                    <input type="text" id="skill" name="skill" placeholder="Enter a skill">
+            
+                    <button type="submit">Search</button>
+                </form>
+
+                <thead>
+                    <tr>
+                      <th scope="col">Champion</th>
+                      <th scope="col">Skills</th>
+                      <th scope="col">Portrait</th>
+                    </tr>
+                  </thead>
+                
+                <tbody>
+                    <tr>
+                        <th>Aatrox</th>
+                        <td>Description: Aatrox is a powerful and relentless warrior known for his high sustain and damage output.</td>
+                        <td>
+                            <img src="img/aatrox.jpg" alt="charater image"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Darius</th>
+                        <td>Darius is a fearsome juggernaut known for his ability to execute enemies and dominate the top lane with his powerful melee attacks.</td>
+                        <td>
+                            <img src="img/darius.jpg" alt="charater image"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fiora</th>
+                        <td>Fiora is a duelist known for her incredible agility and precision with a rapier, allowing her to outmaneuver and outplay opponents in one-on-one combat.</td>
+                        <th>
+                            <img src="img/fiora.jpg" alt="charater image"> 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Gnar</th>
+                        <td>Gnar is a yordle transformed by an ancient curse, switching between a playful and nimble form and a monstrous and ferocious form during combat.</td>
+                        <th>
+                            <img src="img/gnar.jpg" alt="charater image"> 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Irelia</th>
+                        <td>Irelia is a skilled Ionian fighter known for her graceful and deadly blade work, allowing her to slice through enemies with precision and finesse.</td>
+                        <th>
+                            <img src="img/irelia.jpg" alt="charater image"> 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Garen</th>
+                        <td>Garen is a mighty warrior known for his unmatched durability and relentless pursuit of justice on the battlefield.</td>
+                        <th>
+                            <img src="img/garen.jpg" alt="charater image"> 
+                        </th>
+                    </tr>
+                </tbody>
+                <!-- Add more rows for other legend characters -->
+            </table>
         </section>
 
-        <section class="role" id="mid">
-            <h2>MID</h2>
-            <button onclick="showDetails('mid')">Details</button>
-            <p class="details" hidden>Mid lane tactics and recommended champions.</p>
-        </section>
+        <!-- Repeat the same structure for other roles (MID, BOTTOM, JUNGLE, SUPPORT) -->
 
-        <section class="role" id="bottom">
-            <h2>BOTTOM</h2>
-            <button onclick="showDetails('bottom')">Details</button>
-            <p class="details" hidden>Bottom lane duo tips and champion synergy.</p>
-        </section>
-
-        <section class="role" id="jungle">
-            <h2>JUNGLE</h2>
-            <button onclick="showDetails('jungle')">Details</button>
-            <p class="details" hidden>Jungle pathing and effective ganking routes.</p>
-        </section>
-
-        <section class="role" id="support">
-            <h2>SUPPORT</h2>
-            <button onclick="showDetails('support')">Details</button>
-            <p class="details" hidden>Support role secrets and impactful plays.</p>
-        </section>
     </main>
 
     <script>
+        function showDescription(role) {
+            const descriptionParagraph = document.getElementById(role).querySelector('.description');
+            const detailsTable = document.getElementById(role).querySelector('.details');
+            descriptionParagraph.hidden = false;
+            detailsTable.hidden = true;
+        }
+
         function showDetails(role) {
-            const detailParagraph = document.getElementById(role).querySelector('.details');
-            detailParagraph.hidden = !detailParagraph.hidden;
+            const descriptionParagraph = document.getElementById(role).querySelector('.description');
+            const detailsTable = document.getElementById(role).querySelector('.details');
+            descriptionParagraph.hidden = true;
+            detailsTable.hidden = false;
         }
     </script>
 </body>
 </html>
+

@@ -1,1 +1,97 @@
+/* Global styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f9fa;  /* Lighter background */
+    color: #343a40;  /* Darker text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #ffb4a2; /* Light peach */
+    color: #343a40;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px; /* Limit main content width */
+    margin: 20px auto; /* Center main content */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ffafcc; /* Light pink */
+    color: #343a40;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
+
 
