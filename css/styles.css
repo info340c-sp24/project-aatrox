@@ -1,1 +1,121 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f9fa;  /* Lighter background */
+    color: #343a40;  /* Darker text for contrast */
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #ffb4a2; /* Light peach */
+    color: #343a40;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.role {
+    background-color: #bde0fe; /* Soft blue */
+    border: 2px solid #0096c7; /* Vibrant blue border */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 90%; /* Adjusted width for mobile and scaling */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Lighter shadow */
+    text-align: center;
+}
+
+button {
+    background-color: #ffafcc; /* Light pink */
+    color: #343a40;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #ffc8dd; /* Darker pink on hover */
+}
+
+.details {
+    margin-top: 10px;
+    color: #343a40; /* Same as text color */
+    text-align: left;
+}
+
+
+/* Existing styles from earlier will continue to apply. Adding new rules below. */
+
+nav {
+    background-color: #ffb4a2; /* Consistent with header style */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: bold;
+}
+
+main {
+    padding-left: 20px; /* Align text to the left */
+    font-size: 16px;
+}
+
+footer {
+    background-color: #ffb4a2;
+    color: #343a40;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive rules for small, medium, and large screens */
+@media (max-width: 768px) {
+    body {
+        background-color: #f8f9fa;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 899px) {
+    main {
+        font-size: 18px; /* Slightly larger font for medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        font-size: 20px; /* Larger font for better readability on large screens */
+    }
+
+    nav ul li {
+        display: inline-block; /* More space for navigation links on larger screens */
+    }
+}

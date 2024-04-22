@@ -3,51 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoL Strategy Guide</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to the LoL Strategic Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>League of Legends Strategy Guide</h1>
+        <h1>Welcome to the League of Legends Strategic Guide</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Guide</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="role" id="top">
-            <h2>TOP</h2>
-            <button onclick="showDetails('top')">Details</button>
-            <p class="details" hidden>Top lane strategies and champion insights.</p>
-        </section>
-
-        <section class="role" id="mid">
-            <h2>MID</h2>
-            <button onclick="showDetails('mid')">Details</button>
-            <p class="details" hidden>Mid lane tactics and recommended champions.</p>
-        </section>
-
-        <section class="role" id="bottom">
-            <h2>BOTTOM</h2>
-            <button onclick="showDetails('bottom')">Details</button>
-            <p class="details" hidden>Bottom lane duo tips and champion synergy.</p>
-        </section>
-
-        <section class="role" id="jungle">
-            <h2>JUNGLE</h2>
-            <button onclick="showDetails('jungle')">Details</button>
-            <p class="details" hidden>Jungle pathing and effective ganking routes.</p>
-        </section>
-
-        <section class="role" id="support">
-            <h2>SUPPORT</h2>
-            <button onclick="showDetails('support')">Details</button>
-            <p class="details" hidden>Support role secrets and impactful plays.</p>
-        </section>
+        <p>Discover effective strategies and tips to dominate your League of Legends games! Our guide offers comprehensive insights for each role to help you improve your gameplay.</p>
+        <p>Explore various tactics, champion recommendations, and game mechanics tailored to new and seasoned players alike. Whether you're playing TOP, MID, BOTTOM, JUNGLE, or SUPPORT, our strategic guide will elevate your gaming experience.</p>
     </main>
 
-    <script>
-        function showDetails(role) {
-            const detailParagraph = document.getElementById(role).querySelector('.details');
-            detailParagraph.hidden = !detailParagraph.hidden;
-        }
-    </script>
+    <footer>
+        <p>League of Legends Strategic Guide © 2024</p>
+    </footer>
 </body>
 </html>
+

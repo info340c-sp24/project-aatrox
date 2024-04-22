@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LoL Strategy Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>League of Legends Strategy Guide</h1>
+    </header>
 
+    <main>
+        <section class="role" id="top">
+            <h2>TOP</h2>
+            <button onclick="showDetails('top')">Details</button>
+            <p class="details" hidden>Top lane strategies and champion insights.</p>
+        </section>
+
+        <section class="role" id="mid">
+            <h2>MID</h2>
+            <button onclick="showDetails('mid')">Details</button>
+            <p class="details" hidden>Mid lane tactics and recommended champions.</p>
+        </section>
+
+        <section class="role" id="bottom">
+            <h2>BOTTOM</h2>
+            <button onclick="showDetails('bottom')">Details</button>
+            <p class="details" hidden>Bottom lane duo tips and champion synergy.</p>
+        </section>
+
+        <section class="role" id="jungle">
+            <h2>JUNGLE</h2>
+            <button onclick="showDetails('jungle')">Details</button>
+            <p class="details" hidden>Jungle pathing and effective ganking routes.</p>
+        </section>
+
+        <section class="role" id="support">
+            <h2>SUPPORT</h2>
+            <button onclick="showDetails('support')">Details</button>
+            <p class="details" hidden>Support role secrets and impactful plays.</p>
+        </section>
+    </main>
+
+    <script>
+        function showDetails(role) {
+            const detailParagraph = document.getElementById(role).querySelector('.details');
+            detailParagraph.hidden = !detailParagraph.hidden;
+        }
+    </script>
+</body>
+</html>
