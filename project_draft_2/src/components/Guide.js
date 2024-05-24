@@ -88,8 +88,6 @@ const Guide = () => {
                         </tbody>
                     </table>
                 </section>
-
-                {/* Repeat the same structure for other roles (MID, BOTTOM, JUNGLE, SUPPORT) */}
             </main>
 
             <footer>
