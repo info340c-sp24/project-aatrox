@@ -1,16 +1,27 @@
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #f8f9fa;  /* Lighter background */
-    color: #343a40;  /* Darker text for contrast */
+    background-color: #f8f9fa;  
+    color: #343a40;  
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ffb4a2; /* Light peach */
+    background-color: #ffb4a2; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     color: #343a40;
     padding: 20px;
     text-align: center;
+    margin: 0; 
+    position: relative; 
+    top: 0; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 main {
@@ -21,18 +32,18 @@ main {
 }
 
 .role {
-    background-color: #bde0fe; /* Soft blue */
-    border: 2px solid #0096c7; /* Vibrant blue border */
+    background-color: #bde0fe; 
+    border: 2px solid #0096c7; 
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    width: 90%; /* Adjusted width for mobile and scaling */
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Lighter shadow */
+    width: 90%; 
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
     text-align: center;
 }
 
 button {
-    background-color: #ffafcc; /* Light pink */
+    background-color: #ffafcc; 
     color: #343a40;
     border: none;
     padding: 10px 20px;
@@ -42,27 +53,26 @@ button {
 }
 
 button:hover {
-    background-color: #ffc8dd; /* Darker pink on hover */
+    background-color: #ffc8dd; 
 }
 
 .details {
     margin-top: 10px;
-    color: #343a40; /* Same as text color */
+    color: #343a40; 
     text-align: left;
 }
 
-
-/* Existing styles from earlier will continue to apply. Adding new rules below. */
-
 nav {
-    background-color: #ffb4a2; /* Consistent with header style */
+    background-color: #ffb4a2; 
     padding: 10px 0;
     text-align: center;
+    margin: 0; 
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; 
 }
 
 nav ul li {
@@ -77,11 +87,12 @@ nav ul li a {
 }
 
 main {
-    padding-left: 20px; /* Align text to the left */
+    padding-left: 20px; 
     font-size: 16px;
 }
 
 footer {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #ffb4a2;
     color: #343a40;
     text-align: center;
@@ -89,10 +100,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin: 0; 
 }
 
-
-/* Responsive rules for small, medium, and large screens */
 @media (max-width: 768px) {
     body {
         background-color: #f8f9fa;
@@ -106,17 +116,16 @@ footer {
 
 @media (max-width: 899px) {
     main {
-        font-size: 18px; /* Slightly larger font for medium screens */
+        font-size: 18px; 
     }
 }
 
 @media (min-width: 992px) {
     main {
-        font-size: 20px; /* Larger font for better readability on large screens */
+        font-size: 20px; 
     }
 
     nav ul li {
-        display: inline-block; /* More space for navigation links on larger screens */
+        display: inline-block; 
     }
 }
-
