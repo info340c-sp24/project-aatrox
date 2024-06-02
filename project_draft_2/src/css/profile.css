@@ -1,15 +1,17 @@
 /* Global styles */
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #f8f9fa;  /* Lighter background */
-    color: #343a40;  /* Darker text for contrast */
+    background-color: #f8f9fa;  
+    color: #343a40;  
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
 header {
-    background-color: #ffb4a2; /* Light peach */
+    background-color: #ffb4a2; 
     color: #343a40;
     padding: 20px;
     text-align: center;
@@ -32,20 +34,50 @@ nav ul li a {
 }
 
 main {
-    max-width: 800px; /* Limit main content width */
-    margin: 20px auto; /* Center main content */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    background-color: #fff; /* White background */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
-section {
-    margin-bottom: 20px;
+.profile-section {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
+    text-align: center;
     margin-top: 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.profile-info,
+.profile-picture {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-info form {
+    width: 100%;
+}
+
+.profile-info h3,
+.profile-picture h3 {
+    text-align: center;
 }
 
 label {
@@ -54,6 +86,7 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"],
 select {
     width: 100%;
@@ -65,7 +98,7 @@ select {
 }
 
 button {
-    background-color: #ffafcc; /* Light pink */
+    background-color: #ffafcc; 
     color: #343a40;
     border: none;
     padding: 10px 20px;
@@ -74,24 +107,26 @@ button {
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 }
 
-button[type="submit"]:hover {
-    background-color: #555;
+button[type="submit"]:hover,
+button:hover {
+    background-color: #ffc8dd; 
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+ 
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
+
     width: 100%;
+    bottom: 0;
+    margin-top: auto;
+    flex-shrink: 0;
 }
-
-@media screen and (max-width: 600px) {
-    main {
-        padding: 10px;
-    }
-}
-
-

@@ -44,7 +44,7 @@ const Settings = () => {
             </main>
 
             <footer>
-                <p>&copy; 2024 YourGameName. All rights reserved.</p>
+                <p>&copy; 2024 LOL. All rights reserved.</p>
             </footer>
         </div>
     );

@@ -4,6 +4,9 @@ body {
     color: #343a40;  
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -28,18 +31,23 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center; 
+    flex: 1;
 }
 
-.role {
-    background-color: #bde0fe; 
-    border: 2px solid #0096c7; 
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 90%; 
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
-    text-align: center;
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #0096c7;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 button {
@@ -58,8 +66,40 @@ button:hover {
 
 .details {
     margin-top: 10px;
-    color: #343a40; 
+    padding: 10px;
+    background-color: #bde0fe;
+    border: 1px solid #0096c7;
+    border-radius: 4px;
+    color: #343a40;
     text-align: left;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 40px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    color: #0096c7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -86,21 +126,20 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
-    padding-left: 20px; 
-    font-size: 16px;
-}
-
 footer {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #ffb4a2;
     color: #343a40;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
-    margin: 0; 
+    margin-top: auto; 
+}
+
+.community-section {
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +150,11 @@ footer {
     nav ul li {
         display: block;
         margin-bottom: 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -128,4 +172,14 @@ footer {
     nav ul li {
         display: inline-block; 
     }
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; 
+    margin-top: 20px;
 }
